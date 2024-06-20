@@ -44,7 +44,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const Connection = () => {
-    const MONGODB_URL = `mongodb://${process.env.DB_USER}:${encodeURIComponent(process.env.DB_PASSWORD)}@ac-abortse-shard-00-00.lkoabux.mongodb.net:27017,ac-abortse-shard-00-01.lkoabux.mongodb.net:27017,ac-abortse-shard-00-02.lkoabux.mongodb.net:27017/?ssl=true&replicaSet=atlas-uh55z1-shard-0&authSource=admin&retryWrites=true&w=majority&appName=todolist`;
+    const MONGODB_URL = `mongodb://${encodeURIComponent(process.env.DB_USER)}:${encodeURIComponent(process.env.DB_PASSWORD)}@ac-abortse-shard-00-00.lkoabux.mongodb.net:27017,ac-abortse-shard-00-01.lkoabux.mongodb.net:27017,ac-abortse-shard-00-02.lkoabux.mongodb.net:27017/?ssl=true&replicaSet=atlas-uh55z1-shard-0&authSource=admin&retryWrites=true&w=majority&appName=todolist`;
 
     mongoose.connect(MONGODB_URL, { useUnifiedTopology: true});
 
