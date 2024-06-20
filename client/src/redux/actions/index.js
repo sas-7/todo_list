@@ -42,7 +42,7 @@ import axios from 'axios';
 
 import { ADDNEW_TODO, GETALL_TODO, TOGGLE_TODO, UPDATE_TODO, DELETE_TODO, TOGGLE_TAB } from './type';
 
-const API_URL = 'http://todo-list-server-cyan.vercel.app';
+const API_URL = 'https://todo-list-server-cyan.vercel.app';
 
 
 export const addNewTodo = (data) => async (dispatch) => {
